@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CDFB05D1E2FD0E400EDDF1C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDFB05C1E2FD0E400EDDF1C /* AppDelegate.swift */; };
+		7CDFB0611E2FD0E400EDDF1C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CDFB0601E2FD0E400EDDF1C /* Assets.xcassets */; };
+		7CDFB06C1E2FD0E400EDDF1C /* GrailsQuickcastsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDFB06B1E2FD0E400EDDF1C /* GrailsQuickcastsTests.swift */; };
+		7CDFB0771E2FD0E400EDDF1C /* GrailsQuickcastsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDFB0761E2FD0E400EDDF1C /* GrailsQuickcastsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CDFB0681E2FD0E400EDDF1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CDFB0511E2FD0E400EDDF1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CDFB0581E2FD0E400EDDF1C;
+			remoteInfo = GrailsQuickcasts;
+		};
+		7CDFB0731E2FD0E400EDDF1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CDFB0511E2FD0E400EDDF1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CDFB0581E2FD0E400EDDF1C;
+			remoteInfo = GrailsQuickcasts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CDFB0591E2FD0E400EDDF1C /* GrailsQuickcasts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrailsQuickcasts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDFB05C1E2FD0E400EDDF1C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CDFB05F1E2FD0E400EDDF1C /* application.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
+		7CDFB0601E2FD0E400EDDF1C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CDFB0621E2FD0E400EDDF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CDFB0671E2FD0E400EDDF1C /* GrailsQuickcastsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrailsQuickcastsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDFB06B1E2FD0E400EDDF1C /* GrailsQuickcastsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrailsQuickcastsTests.swift; sourceTree = "<group>"; };
+		7CDFB06D1E2FD0E400EDDF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CDFB0721E2FD0E400EDDF1C /* GrailsQuickcastsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrailsQuickcastsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CDFB0761E2FD0E400EDDF1C /* GrailsQuickcastsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrailsQuickcastsUITests.swift; sourceTree = "<group>"; };
+		7CDFB0781E2FD0E400EDDF1C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CDFB0561E2FD0E400EDDF1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDFB0641E2FD0E400EDDF1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDFB06F1E2FD0E400EDDF1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CDFB0501E2FD0E400EDDF1C = {
+			isa = PBXGroup;
+			children = (
+				7CDFB05B1E2FD0E400EDDF1C /* GrailsQuickcasts */,
+				7CDFB06A1E2FD0E400EDDF1C /* GrailsQuickcastsTests */,
+				7CDFB0751E2FD0E400EDDF1C /* GrailsQuickcastsUITests */,
+				7CDFB05A1E2FD0E400EDDF1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CDFB05A1E2FD0E400EDDF1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CDFB0591E2FD0E400EDDF1C /* GrailsQuickcasts.app */,
+				7CDFB0671E2FD0E400EDDF1C /* GrailsQuickcastsTests.xctest */,
+				7CDFB0721E2FD0E400EDDF1C /* GrailsQuickcastsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CDFB05B1E2FD0E400EDDF1C /* GrailsQuickcasts */ = {
+			isa = PBXGroup;
+			children = (
+				7CDFB05C1E2FD0E400EDDF1C /* AppDelegate.swift */,
+				7CDFB0601E2FD0E400EDDF1C /* Assets.xcassets */,
+				7CDFB0621E2FD0E400EDDF1C /* Info.plist */,
+				7CDFB05E1E2FD0E400EDDF1C /* Supporting Files */,
+			);
+			path = GrailsQuickcasts;
+			sourceTree = "<group>";
+		};
+		7CDFB05E1E2FD0E400EDDF1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7CDFB05F1E2FD0E400EDDF1C /* application.js */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7CDFB06A1E2FD0E400EDDF1C /* GrailsQuickcastsTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CDFB06B1E2FD0E400EDDF1C /* GrailsQuickcastsTests.swift */,
+				7CDFB06D1E2FD0E400EDDF1C /* Info.plist */,
+			);
+			path = GrailsQuickcastsTests;
+			sourceTree = "<group>";
+		};
+		7CDFB0751E2FD0E400EDDF1C /* GrailsQuickcastsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CDFB0761E2FD0E400EDDF1C /* GrailsQuickcastsUITests.swift */,
+				7CDFB0781E2FD0E400EDDF1C /* Info.plist */,
+			);
+			path = GrailsQuickcastsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CDFB0581E2FD0E400EDDF1C /* GrailsQuickcasts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CDFB07B1E2FD0E400EDDF1C /* Build configuration list for PBXNativeTarget "GrailsQuickcasts" */;
+			buildPhases = (
+				7CDFB0551E2FD0E400EDDF1C /* Sources */,
+				7CDFB0561E2FD0E400EDDF1C /* Frameworks */,
+				7CDFB0571E2FD0E400EDDF1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrailsQuickcasts;
+			productName = GrailsQuickcasts;
+			productReference = 7CDFB0591E2FD0E400EDDF1C /* GrailsQuickcasts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CDFB0661E2FD0E400EDDF1C /* GrailsQuickcastsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CDFB07E1E2FD0E400EDDF1C /* Build configuration list for PBXNativeTarget "GrailsQuickcastsTests" */;
+			buildPhases = (
+				7CDFB0631E2FD0E400EDDF1C /* Sources */,
+				7CDFB0641E2FD0E400EDDF1C /* Frameworks */,
+				7CDFB0651E2FD0E400EDDF1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CDFB0691E2FD0E400EDDF1C /* PBXTargetDependency */,
+			);
+			name = GrailsQuickcastsTests;
+			productName = GrailsQuickcastsTests;
+			productReference = 7CDFB0671E2FD0E400EDDF1C /* GrailsQuickcastsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CDFB0711E2FD0E400EDDF1C /* GrailsQuickcastsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CDFB0811E2FD0E400EDDF1C /* Build configuration list for PBXNativeTarget "GrailsQuickcastsUITests" */;
+			buildPhases = (
+				7CDFB06E1E2FD0E400EDDF1C /* Sources */,
+				7CDFB06F1E2FD0E400EDDF1C /* Frameworks */,
+				7CDFB0701E2FD0E400EDDF1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CDFB0741E2FD0E400EDDF1C /* PBXTargetDependency */,
+			);
+			name = GrailsQuickcastsUITests;
+			productName = GrailsQuickcastsUITests;
+			productReference = 7CDFB0721E2FD0E400EDDF1C /* GrailsQuickcastsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CDFB0511E2FD0E400EDDF1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = OCI;
+				TargetAttributes = {
+					7CDFB0581E2FD0E400EDDF1C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					7CDFB0661E2FD0E400EDDF1C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7CDFB0581E2FD0E400EDDF1C;
+					};
+					7CDFB0711E2FD0E400EDDF1C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 7CDFB0581E2FD0E400EDDF1C;
+					};
+				};
+			};
+			buildConfigurationList = 7CDFB0541E2FD0E400EDDF1C /* Build configuration list for PBXProject "GrailsQuickcasts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7CDFB0501E2FD0E400EDDF1C;
+			productRefGroup = 7CDFB05A1E2FD0E400EDDF1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CDFB0581E2FD0E400EDDF1C /* GrailsQuickcasts */,
+				7CDFB0661E2FD0E400EDDF1C /* GrailsQuickcastsTests */,
+				7CDFB0711E2FD0E400EDDF1C /* GrailsQuickcastsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CDFB0571E2FD0E400EDDF1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDFB0611E2FD0E400EDDF1C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDFB0651E2FD0E400EDDF1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDFB0701E2FD0E400EDDF1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CDFB0551E2FD0E400EDDF1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDFB05D1E2FD0E400EDDF1C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDFB0631E2FD0E400EDDF1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDFB06C1E2FD0E400EDDF1C /* GrailsQuickcastsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CDFB06E1E2FD0E400EDDF1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDFB0771E2FD0E400EDDF1C /* GrailsQuickcastsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CDFB0691E2FD0E400EDDF1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CDFB0581E2FD0E400EDDF1C /* GrailsQuickcasts */;
+			targetProxy = 7CDFB0681E2FD0E400EDDF1C /* PBXContainerItemProxy */;
+		};
+		7CDFB0741E2FD0E400EDDF1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CDFB0581E2FD0E400EDDF1C /* GrailsQuickcasts */;
+			targetProxy = 7CDFB0731E2FD0E400EDDF1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		7CDFB0791E2FD0E400EDDF1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+			};
+			name = Debug;
+		};
+		7CDFB07A1E2FD0E400EDDF1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CDFB07C1E2FD0E400EDDF1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GrailsQuickcasts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ociweb.GrailsQuickcasts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7CDFB07D1E2FD0E400EDDF1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = GrailsQuickcasts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ociweb.GrailsQuickcasts;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7CDFB07F1E2FD0E400EDDF1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GrailsQuickcastsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ociweb.GrailsQuickcastsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrailsQuickcasts.app/GrailsQuickcasts";
+			};
+			name = Debug;
+		};
+		7CDFB0801E2FD0E400EDDF1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GrailsQuickcastsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ociweb.GrailsQuickcastsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GrailsQuickcasts.app/GrailsQuickcasts";
+			};
+			name = Release;
+		};
+		7CDFB0821E2FD0E400EDDF1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GrailsQuickcastsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ociweb.GrailsQuickcastsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GrailsQuickcasts;
+			};
+			name = Debug;
+		};
+		7CDFB0831E2FD0E400EDDF1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = GrailsQuickcastsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ociweb.GrailsQuickcastsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = GrailsQuickcasts;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CDFB0541E2FD0E400EDDF1C /* Build configuration list for PBXProject "GrailsQuickcasts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CDFB0791E2FD0E400EDDF1C /* Debug */,
+				7CDFB07A1E2FD0E400EDDF1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CDFB07B1E2FD0E400EDDF1C /* Build configuration list for PBXNativeTarget "GrailsQuickcasts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CDFB07C1E2FD0E400EDDF1C /* Debug */,
+				7CDFB07D1E2FD0E400EDDF1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CDFB07E1E2FD0E400EDDF1C /* Build configuration list for PBXNativeTarget "GrailsQuickcastsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CDFB07F1E2FD0E400EDDF1C /* Debug */,
+				7CDFB0801E2FD0E400EDDF1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CDFB0811E2FD0E400EDDF1C /* Build configuration list for PBXNativeTarget "GrailsQuickcastsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CDFB0821E2FD0E400EDDF1C /* Debug */,
+				7CDFB0831E2FD0E400EDDF1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7CDFB0511E2FD0E400EDDF1C /* Project object */;
+}

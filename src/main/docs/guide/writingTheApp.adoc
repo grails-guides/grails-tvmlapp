@@ -1,1 +1,7 @@
-TODO: Complete the guide
+The _initial_ grails application which you can find in the _initial_ folder was created
+with the command:
+
+[source,bash]
+----
+grails create-app --profile rest-api -features=hibernate5,markup-views,asset-pipeline
+---- 

@@ -1,7 +1,9 @@
-gettingStarted: 
+gettingStarted:
   title: Getting Started
   requirements: What you will need
   howto: How to complete the guide
+writingTheTvOSApp:
+  title: Writing the TvOS Application
 writingTheApp:
   title: Writing the Application
 runningTheApp:
