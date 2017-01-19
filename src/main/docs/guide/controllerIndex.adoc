@@ -13,7 +13,7 @@ include::{commondir}/common-quoteController.adoc[]
 
 ----
 
-A request to _http://localhost:8080/quickcast_ executes the _index_ action of _QuickcastController_
+A request to _http://localhost:8080/quickcast_ executes the `index` action of `QuickcastController`
 
 [source,groovy]
 ./grails-app/controllers/com/ociweb/quickcasts/QuickcastController.groovy
@@ -21,7 +21,7 @@ A request to _http://localhost:8080/quickcast_ executes the _index_ action of _Q
 include::{sourceDir}/grails-app/controllers/com/ociweb/quickcasts/QuickcastController.groovy[indent=0,lines="1..4,8..11,17..18"]
 ----
 
-The _QuickcastController_ index method renders every _Quickcast_ using the next http://views.grails.org/latest/#_markup_views[Markup View]
+The `QuickcastController` index method renders every `Quickcast` using the next http://views.grails.org/latest/#_markup_views[Markup View]
 
 include::{commondir}/common-quoteMarkupViews.adoc[]
 
@@ -31,7 +31,7 @@ include::{commondir}/common-quoteMarkupViews.adoc[]
 include::{sourceDir}/grails-app/views/quickcast/index.gml[indent=0]
 ----
 
-Markup Views are written in Groovy, end with the file extension _gml_ and reside in the _grails-app/views_ directory.
+Markup Views are written in Groovy, end with the file extension `gml` and reside in the `grails-app/views` directory.
 
 Write a http://docs.grails.org/latest/guide/testing.html#functionalTesting[functional test] to test the XML generated is what we expect.
 
@@ -41,7 +41,7 @@ Write a http://docs.grails.org/latest/guide/testing.html#functionalTesting[funct
 include::{sourceDir}/src/integration-test/groovy/com/ociweb/quickcasts/QuickcastControllerIndexSpec.groovy[indent=0]
 ----
 
-To facilitate XML comparison in the tests, we include _XMLUnit_ as a dependency.
+To facilitate XML comparison in the tests, we include `XMLUnit` as a dependency.
 [source,groovy]
 ./build.gradle
 ----

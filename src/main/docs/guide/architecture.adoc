@@ -1,5 +1,5 @@
 This guide features a Client Server architecture. The Client, a tvOS application, connects to
-a Grails App, the servers, which responds with TVMLKit Js and TVML documents.
+a Grails App, the server, which responds with TVMLKit JS and TVML documents.
 
 image::architecture.png[]
 

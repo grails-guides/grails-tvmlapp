@@ -74,7 +74,7 @@ function addJsClass(el) {
 
 
 <div class="paragraph">
-<p>In this guide, you write a <a href="https://developer.apple.com/library/prerelease/content/documentation/TVMLKitJS/Conceptual/TVMLProgrammingGuide/index.html#//apple_ref/doc/uid/TP40016718-CH6-SW1">TVML application</a>.</p>
+<p>In this guide, you will write a <a href="https://developer.apple.com/library/prerelease/content/documentation/TVMLKitJS/Conceptual/TVMLProgrammingGuide/index.html#//apple_ref/doc/uid/TP40016718-CH6-SW1">TVML application</a>.</p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -101,7 +101,7 @@ by selecting the play button.</p>
 
 <div class="paragraph">
 <p>This guide features a Client Server architecture. The Client, a tvOS application, connects to
-a Grails App, the servers, which responds with TVMLKit Js and TVML documents.</p>
+a Grails App, the server, which responds with TVMLKit JS and TVML documents.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -207,7 +207,7 @@ You can go right to the completed example if you <code>cd</code> into <code>grai
 
 
 <div class="paragraph">
-<p>To create a TVML application and connect it to a Grails Server we need to modify the variables <em>tvBaseURL</em> and <em>tvBootURL</em>.</p>
+<p>To create a TVML application and connect it to a Grails Server we need to modify the variables <code>tvBaseURL</code> and <code>tvBootURL</code>.</p>
 </div>
 <div class="paragraph">
 <p>Create a TvOS project with the TVML application template.</p>
@@ -234,7 +234,7 @@ You can go right to the completed example if you <code>cd</code> into <code>grai
 </div>
 </div>
 <div class="paragraph">
-<p>Modify <em>AppDelegate.swift</em> and set the static variables <em>tvBaseURL</em> and <em>tvBootURL</em></p>
+<p>Modify <code>AppDelegate.swift</code> and set the static variables <code>tvBaseURL</code> and <code>tvBootURL</code>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -310,7 +310,7 @@ static let tvBootURL = &quot;\(AppDelegate.tvBaseURL)/assets/application.js&quot
 </blockquote>
 </div>
 <div class="paragraph">
-<p>Add a javascript file to our project. It defines a series of methods nearly identical as those described in the section Playing Media of
+<p>Add a JavaScript file to our project. It defines a series of methods nearly identical as those described in the section Playing Media of
 <a href="https://developer.apple.com/library/prerelease/content/documentation/TVMLKitJS/Conceptual/TVMLProgrammingGuide/PlayingVideo.html">TVML Programming Guide</a>.</p>
 </div>
 <div class="paragraph">
@@ -412,7 +412,7 @@ App.<span class="function">onLaunch</span> = <span class="keyword">function</spa
 </div>
 </div>
 <div class="paragraph">
-<p>The initial TVML document is the XML rendered at <em><a href="http://localhost:8080/quickcast" class="bare">http://localhost:8080/quickcast</a></em></p>
+<p>The initial TVML document is the XML rendered at <code><a href="http://localhost:8080/quickcast" class="bare">http://localhost:8080/quickcast</a></code>.</p>
 </div>
 <div class="paragraph">
 <p>The next line designates the initial document:</p>
@@ -451,7 +451,7 @@ mapped onto an underlying database table. In Grails a domain is a class that liv
 </div>
 </div>
 <div class="paragraph">
-<p><em>Quickcast</em> domain class is our data model. We define different properties to store the Quickcast characteristics.</p>
+<p>The <code>Quickcast</code> domain class is our data model. We define different properties to store the <code>Quickcast</code> characteristics.</p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/domain/com/ociweb/quickcasts/Quickcast.groovy</div>
@@ -480,7 +480,7 @@ mapped onto an underlying database table. In Grails a domain is a class that liv
 </div>
 </div>
 <div class="paragraph">
-<p>With a <a href="http://docs.grails.org/latest/guide/testing.html">Unit Test</a>, we test the property body is option</p>
+<p>With a <a href="http://docs.grails.org/latest/guide/testing.html">Unit Test</a>, we test the property body is optional.</p>
 </div>
 <div class="listingblock">
 <div class="title">/src/test/groovy/com/ociweb/quickcasts/QuickcastSpec.groovy</div>
@@ -504,7 +504,7 @@ mapped onto an underlying database table. In Grails a domain is a class that liv
 </div>
 </div>
 <div class="paragraph">
-<p>We load some test data in <em>BootStrap.groovy</em></p>
+<p>We then load some test data in <code>BootStrap.groovy</code>.</p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/init/com/ociweb/quickcasts/BootStrap.groovy</div>
@@ -642,7 +642,7 @@ with the Grails Quickcasts:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>A request to <em><a href="http://localhost:8080/quickcast" class="bare">http://localhost:8080/quickcast</a></em> executes the <em>index</em> action of <em>QuickcastController</em></p>
+<p>A request to <em><a href="http://localhost:8080/quickcast" class="bare">http://localhost:8080/quickcast</a></em> executes the <code>index</code> action of <code>QuickcastController</code></p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/controllers/com/ociweb/quickcasts/QuickcastController.groovy</div>
@@ -659,7 +659,7 @@ with the Grails Quickcasts:</p>
 </div>
 </div>
 <div class="paragraph">
-<p>The <em>QuickcastController</em> index method renders every <em>Quickcast</em> using the next <a href="http://views.grails.org/latest/#_markup_views">Markup View</a></p>
+<p>The <code>QuickcastController</code> index method renders every <code>Quickcast</code> using the next <a href="http://views.grails.org/latest/#_markup_views">Markup View</a></p>
 </div>
 <div class="quoteblock">
 <blockquote>
@@ -699,7 +699,7 @@ document {
 </div>
 </div>
 <div class="paragraph">
-<p>Markup Views are written in Groovy, end with the file extension <em>gml</em> and reside in the <em>grails-app/views</em> directory.</p>
+<p>Markup Views are written in Groovy, end with the file extension <code>gml</code> and reside in the <code>grails-app/views</code> directory.</p>
 </div>
 <div class="paragraph">
 <p>Write a <a href="http://docs.grails.org/latest/guide/testing.html#functionalTesting">functional test</a> to test the XML generated is what we expect.</p>
@@ -780,12 +780,12 @@ document {
 </div>
 </div>
 <div class="paragraph">
-<p>To facilitate XML comparison in the tests, we include <em>XMLUnit</em> as a dependency.</p>
+<p>To facilitate XML comparison in the tests, we include <code>XMLUnit</code> as a dependency.</p>
 </div>
 <div class="listingblock">
 <div class="title">/build.gradle</div>
 <div class="content">
-<pre class="CodeRay highlight"><code data-lang="groovy">compile <span class="string"><span class="delimiter">&quot;</span><span class="content">xmlunit:xmlunit:1.6</span><span class="delimiter">&quot;</span></span></code></pre>
+<pre class="CodeRay highlight"><code data-lang="groovy">testCompile <span class="string"><span class="delimiter">&quot;</span><span class="content">xmlunit:xmlunit:1.6</span><span class="delimiter">&quot;</span></span></code></pre>
 </div>
 </div>
 
@@ -800,10 +800,10 @@ document {
 
 
 <div class="paragraph">
-<p>When we select the first Quickcast, the document residing in <em><a href="http://localhost:8080/quickast/1" class="bare">http://localhost:8080/quickast/1</a></em> is pushed into the navigation stack</p>
+<p>When we select the first Quickcast, the document residing in <code><a href="http://localhost:8080/quickast/1" class="bare">http://localhost:8080/quickast/1</a></code> is pushed into the navigation stack</p>
 </div>
 <div class="paragraph">
-<p>To render a Quickcast we use the
+<p>To render a Quickcast, we use the
 <a href="https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/ProductTemplate.html">Apple TVML Product Template</a>.</p>
 </div>
 <div class="imageblock">
@@ -812,7 +812,7 @@ document {
 </div>
 </div>
 <div class="paragraph">
-<p>A request to <em><a href="http://localhost:8080/quickcast/1" class="bare">http://localhost:8080/quickcast/1</a></em> executes the <em>show</em> action of <em>QuickcastController</em></p>
+<p>A request to <code><a href="http://localhost:8080/quickcast/1" class="bare">http://localhost:8080/quickcast/1</a></code> executes the <code>show</code> action of <code>QuickcastController</code>.</p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/controllers/com/ociweb/quickcasts/QuickcastController.groovy</div>
@@ -834,7 +834,7 @@ document {
 <p>The model passed to our view is the requested Quickcast and a series of related videos.</p>
 </div>
 <div class="paragraph">
-<p>We configure in <em>application.yml</em> how many related quickcasts we want to show.</p>
+<p>In <code>application.yml</code>, we configure how many related Quickcasts we want to show.</p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/conf/application.yml</div>
@@ -879,7 +879,7 @@ document {
 </div>
 </div>
 <div class="paragraph">
-<p>The <em>QuickcastController</em> index method renders a <em>Quickcast</em> using the next <a href="http://views.grails.org/latest/#_markup_views">Markup View</a></p>
+<p>The <code>QuickcastController</code> index method renders a <code>Quickcast</code> using the next <a href="http://views.grails.org/latest/#_markup_views">Markup View</a></p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/views/quickcast/show.gml</div>
@@ -1070,7 +1070,7 @@ document {
 </div>
 </div>
 <div class="paragraph">
-<p>The  message codes and default values are defined in <em>messages.properties</em></p>
+<p>Define message codes and default values in <code>messages.properties</code></p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/i18n/messages.properties</div>
@@ -1083,10 +1083,10 @@ quickcasts.title=Grails Quickcasts</code></pre>
 </div>
 <div class="paragraph">
 <p>Including a Spanish localization is easy. Include the localized message codes in
-<em>messages_es.properties</em></p>
+<code>messages_es.properties</code>.</p>
 </div>
 <div class="listingblock">
-<div class="title">/grails-app/i18n/messages.properties</div>
+<div class="title">/grails-app/i18n/messages_es.properties</div>
 <div class="content">
 <pre class="CodeRay highlight"><code>resouce.button.play=Reproducir
 quickcast.authors.header=Autores
@@ -1106,7 +1106,7 @@ quickcasts.title=Grails Quickcasts</code></pre>
 
 
 <div class="paragraph">
-<p>To run the Grails application use the <em>./gradlew bootRun</em> command which will start the application on port 8080.</p>
+<p>To run the Grails application use the <code>./gradlew bootRun</code> command which will start the application on port 8080.</p>
 </div>
 <div class="paragraph">
 <p>Run the Xcode project and your Apple TvOS app will connect to your Grails Backend.</p>

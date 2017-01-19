@@ -7,7 +7,7 @@ include::{commondir}/common-quoteDomainClass.adoc[]
 ./grailsw create-domain-class Quickcast
 ----
 
-_Quickcast_ domain class is our data model. We define different properties to store the Quickcast characteristics.
+The `Quickcast` domain class is our data model. We define different properties to store the `Quickcast` characteristics.
 
 [source,javascript]
 ./grails-app/domain/com/ociweb/quickcasts/Quickcast.groovy
@@ -15,7 +15,7 @@ _Quickcast_ domain class is our data model. We define different properties to st
 include::{sourceDir}/grails-app/domain/com/ociweb/quickcasts/Quickcast.groovy[indent=0]
 ----
 
-With a http://docs.grails.org/latest/guide/testing.html[Unit Test], we test the property body is option
+With a http://docs.grails.org/latest/guide/testing.html[Unit Test], we test the property body is optional.
 
 [source,groovy]
 ./src/test/groovy/com/ociweb/quickcasts/QuickcastSpec.groovy
@@ -23,7 +23,7 @@ With a http://docs.grails.org/latest/guide/testing.html[Unit Test], we test the 
 include::{sourceDir}/src/test/groovy/com/ociweb/quickcasts/QuickcastSpec.groovy[indent=0]
 ----
 
-We load some test data in _BootStrap.groovy_
+We then load some test data in `BootStrap.groovy`.
 
 [source,javascript]
 ./grails-app/init/com/ociweb/quickcasts/BootStrap.groovy

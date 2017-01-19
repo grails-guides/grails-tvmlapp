@@ -79,10 +79,10 @@ function addJsClass() {
 
 
 <div class="paragraph">
-<p>When we select the first Quickcast, the document residing in <em><a href="http://localhost:8080/quickast/1" class="bare">http://localhost:8080/quickast/1</a></em> is pushed into the navigation stack</p>
+<p>When we select the first Quickcast, the document residing in <code><a href="http://localhost:8080/quickast/1" class="bare">http://localhost:8080/quickast/1</a></code> is pushed into the navigation stack</p>
 </div>
 <div class="paragraph">
-<p>To render a Quickcast we use the
+<p>To render a Quickcast, we use the
 <a href="https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/ProductTemplate.html">Apple TVML Product Template</a>.</p>
 </div>
 <div class="imageblock">
@@ -91,7 +91,7 @@ function addJsClass() {
 </div>
 </div>
 <div class="paragraph">
-<p>A request to <em><a href="http://localhost:8080/quickcast/1" class="bare">http://localhost:8080/quickcast/1</a></em> executes the <em>show</em> action of <em>QuickcastController</em></p>
+<p>A request to <code><a href="http://localhost:8080/quickcast/1" class="bare">http://localhost:8080/quickcast/1</a></code> executes the <code>show</code> action of <code>QuickcastController</code>.</p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/controllers/com/ociweb/quickcasts/QuickcastController.groovy</div>
@@ -113,7 +113,7 @@ function addJsClass() {
 <p>The model passed to our view is the requested Quickcast and a series of related videos.</p>
 </div>
 <div class="paragraph">
-<p>We configure in <em>application.yml</em> how many related quickcasts we want to show.</p>
+<p>In <code>application.yml</code>, we configure how many related Quickcasts we want to show.</p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/conf/application.yml</div>
@@ -158,7 +158,7 @@ function addJsClass() {
 </div>
 </div>
 <div class="paragraph">
-<p>The <em>QuickcastController</em> index method renders a <em>Quickcast</em> using the next <a href="http://views.grails.org/latest/#_markup_views">Markup View</a></p>
+<p>The <code>QuickcastController</code> index method renders a <code>Quickcast</code> using the next <a href="http://views.grails.org/latest/#_markup_views">Markup View</a></p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/views/quickcast/show.gml</div>

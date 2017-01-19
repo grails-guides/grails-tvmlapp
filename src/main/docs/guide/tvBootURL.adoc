@@ -19,7 +19,7 @@ Please note, how the line displayed in the next Listing includes the TVMLKit JS 
 include::{sourceDir}/grails-app/assets/javascripts/application.js[indent=0, lines=8]
 ----
 
-The initial TVML document is the XML rendered at _http://localhost:8080/quickcast_
+The initial TVML document is the XML rendered at `http://localhost:8080/quickcast`.
 
 The next line designates the initial document:
 
