@@ -12,9 +12,6 @@ import org.springframework.beans.factory.annotation.Value
 @Integration
 class QuickcastControllerShowSpec extends Specification {
 
-    @Value('${local.server.port}')
-    Integer serverPort
-
     def "test product template is rendered correctly"() {
         given:
         def expected = '''<document>

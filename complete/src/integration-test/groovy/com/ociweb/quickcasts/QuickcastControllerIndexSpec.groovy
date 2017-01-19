@@ -12,9 +12,6 @@ import org.springframework.beans.factory.annotation.Value
 @Integration
 class QuickcastControllerIndexSpec extends Specification {
 
-    @Value('${local.server.port}')
-    Integer serverPort
-
     def "test stack template is rendered correctly"() {
 
         given:
