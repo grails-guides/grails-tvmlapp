@@ -4,4 +4,6 @@ with the command:
 [source,bash]
 ----
 grails create-app --profile rest-api -features=hibernate5,markup-views,asset-pipeline
----- 
+----
+
+include::{commondir}/common-grailsApplicationForge.adoc[]

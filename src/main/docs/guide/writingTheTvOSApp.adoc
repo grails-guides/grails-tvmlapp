@@ -1,22 +1,18 @@
-To create a TvOS app and connect it to a Grails Server we need to modify the variables _tvBaseURL_ and _tvBootURL_.
-
-We create a project from scratch and do it.
+To create a TVML application and connect it to a Grails Server we need to modify the variables _tvBaseURL_ and _tvBootURL_.
 
 Create a TvOS project with the TVML application template.
 
 image::tvOSProjectTemplateTvml.png[]
 
-We choose Swift as the language.
+Choose Swift as the language.
 
 image::projectOptions.png[]
 
-We connect to a local Grails server. Because of that we configure _App Transport Security Settings_ to _Allow Arbitrary Loads_
+To connect it to a local Grails server configure _App Transport Security Settings_ to _Allow Arbitrary Loads_
 
 image::appTransportSecurity.png[]
 
-We point to our Grails App. We modify _AppDelegate.swift_ and set the static
-variables _tvBaseURL_ and _tvBootURL_
-
+Modify _AppDelegate.swift_ and set the static variables _tvBaseURL_ and _tvBootURL_
 
 [source,swift]
 ----

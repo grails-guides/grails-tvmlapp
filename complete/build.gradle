@@ -12,7 +12,7 @@ buildscript {
 }
 
 version "0.1"
-group "initial"
+group "com.ociweb.quickcasts"
 
 apply plugin:"eclipse"
 apply plugin:"idea"
@@ -66,6 +66,7 @@ dependencies {
     testCompile "org.grails:grails-datastore-rest-client"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+    compile "xmlunit:xmlunit:1.6"
 }
 
 bootRun {

@@ -2,7 +2,7 @@
                       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
-    <title>2 Writing the TvOS Application</title>
+    <title>2 Writing the TVML Client</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="../css/main.css" type="text/css" media="screen, print" title="Style" charset="utf-8"/>
     <link rel="stylesheet" href="../css/guide.css" type="text/css" media="screen, print" title="Style" charset="utf-8" />            
@@ -33,10 +33,10 @@ function addJsClass() {
                         <div class="toc-item" style="margin-left:0"><a href="../guide/gettingStarted.html"><strong>1</strong><span>Getting Started</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/writingTheTvOSApp.html"><strong>2</strong><span>Writing the TvOS Application</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/writingTheTvOSApp.html"><strong>2</strong><span>Writing the TVML Client</span></a>
                         </div>
                         
-                        <div class="toc-item" style="margin-left:0"><a href="../guide/writingTheApp.html"><strong>3</strong><span>Writing the Application</span></a>
+                        <div class="toc-item" style="margin-left:0"><a href="../guide/writingTheApp.html"><strong>3</strong><span>Writing the TVML Grails Application</span></a>
                         </div>
                         
                         <div class="toc-item" style="margin-left:0"><a href="../guide/runningTheApp.html"><strong>4</strong><span>Running the Application</span></a>
@@ -61,7 +61,7 @@ function addJsClass() {
                 
 
                 
-                    <div class="toc-item next-right"><a href="../guide/writingTheApp.html"><strong>3</strong><span>Writing the Application</span> >></a></div>
+                    <div class="toc-item next-right"><a href="../guide/writingTheApp.html"><strong>3</strong><span>Writing the TVML Grails Application</span> >></a></div>
                 
 
 
@@ -69,7 +69,7 @@ function addJsClass() {
 
                 
 
-<h1 id="writingTheTvOSApp">2 Writing the TvOS Application</h1>
+<h1 id="writingTheTvOSApp">2 Writing the TVML Client</h1>
 
 <div class='contribute-btn'>
     <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/writingTheTvOSApp.adoc"'>
@@ -79,10 +79,7 @@ function addJsClass() {
 
 
 <div class="paragraph">
-<p>To create a TvOS app and connect it to a Grails Server we need to modify the variables <em>tvBaseURL</em> and <em>tvBootURL</em>.</p>
-</div>
-<div class="paragraph">
-<p>We create a project from scratch and do it.</p>
+<p>To create a TVML application and connect it to a Grails Server we need to modify the variables <em>tvBaseURL</em> and <em>tvBootURL</em>.</p>
 </div>
 <div class="paragraph">
 <p>Create a TvOS project with the TVML application template.</p>
@@ -93,7 +90,7 @@ function addJsClass() {
 </div>
 </div>
 <div class="paragraph">
-<p>We choose Swift as the language.</p>
+<p>Choose Swift as the language.</p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -101,7 +98,7 @@ function addJsClass() {
 </div>
 </div>
 <div class="paragraph">
-<p>We connect to a local Grails server. Because of that we configure <em>App Transport Security Settings</em> to <em>Allow Arbitrary Loads</em></p>
+<p>To connect it to a local Grails server configure <em>App Transport Security Settings</em> to <em>Allow Arbitrary Loads</em></p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -109,8 +106,7 @@ function addJsClass() {
 </div>
 </div>
 <div class="paragraph">
-<p>We point to our Grails App. We modify <em>AppDelegate.swift</em> and set the static
-variables <em>tvBaseURL</em> and <em>tvBootURL</em></p>
+<p>Modify <em>AppDelegate.swift</em> and set the static variables <em>tvBaseURL</em> and <em>tvBootURL</em></p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -129,7 +125,7 @@ static let tvBootURL = &quot;\(AppDelegate.tvBaseURL)/assets/application.js&quot
                 
                     <div class="toc-item prev-left"><a href="../guide/gettingStarted.html">&lt;&lt; <strong>1</strong><span>Getting Started</span></a></div>
                 
-                    <div class="toc-item next-right"><a href="../guide/writingTheApp.html"><strong>3</strong><span>Writing the Application</span> >></a></div>
+                    <div class="toc-item next-right"><a href="../guide/writingTheApp.html"><strong>3</strong><span>Writing the TVML Grails Application</span> >></a></div>
                 
                 <div style="clear:both"></div>
             </div>

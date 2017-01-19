@@ -1,4 +1,8 @@
 ---
+ociweb:
+    quickcasts:
+        numberOfRelatedQuickcasts: 3
+---
 grails:
     profile: rest-api
     codegen:
