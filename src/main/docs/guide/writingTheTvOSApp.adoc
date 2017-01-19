@@ -8,9 +8,11 @@ Choose Swift as the language.
 
 image::projectOptions.png[]
 
-To connect it to a local Grails server configure _App Transport Security Settings_ to _Allow Arbitrary Loads_
+Add a new value _App Transport Security Settings_ (case sensitive), and as its child, add _Allow Arbitrary Loads_, and set that value to YES.
 
 image::appTransportSecurity.png[]
+
+NOTE: Adding this key to your Info.plist is necessary because as of iOS 9, your app will prevent linking to non-HTTPS servers to encourage best practices. In this tutorial, you’ll be testing against a local server without HTTPS enabled, so you’ll disable the default behavior.
 
 Modify `AppDelegate.swift` and set the static variables `tvBaseURL` and `tvBootURL`.
 
