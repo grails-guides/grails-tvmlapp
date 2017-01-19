@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Thumbs.db
 .DS_Store
 .gradle
@@ -9,3 +10,8 @@ build/
 .project
 .settings
 .classpath
+=======
+/.gradle
+.DS_Store
+/completelTvOS/GrailsQuickcasts.xcodeproj/project.xcworkspace/xcuserdata/sdelamo.xcuserdatad/UserInterfaceState.xcuserstate
+>>>>>>> Better gitignore
