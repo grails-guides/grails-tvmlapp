@@ -65,11 +65,11 @@ In this Quickcast, OCI Engineer James Kleeh walks you through using the Angular 
                 durationSeconds: 51,
                 releaseYear: 2016,
                 description: '''
-In the fifth Grails QuickCast, Grails co-founder, Jeff Scott Brown, highlights some of the great features of the Grails framework.  In less than 18 minutes, Jeff describes several techniques for retrieving configuration values at runtime, and discusses the pros and cons of these different techniques. For this Quickcast, you’ll need no more than a basic understanding of Grails. The Grails Quickcast series is brought to you from OCI and DZone.  
+In the fifth Grails QuickCast, Grails co-founder, Jeff Scott Brown, highlights some of the great features of the Grails framework.  In less than 18 minutes, Jeff describes several techniques for retrieving configuration values at runtime, and discusses the pros and cons of these different techniques. For this Quickcast, you’ll need no more than a basic understanding of Grails. The Grails Quickcast series is brought to you from OCI and DZone.
 
 Grails leverages the “Convention Over Configuration” design paradigm, which functions to decrease the number of decisions that a developer using the framework is required to make without losing flexibility. This is one of the main reasons why Grails significantly increases developer productivity!
 
-While Grails applications often involve considerably less configuration than similar applications built with other frameworks, some configuration may still be necessary. In this short video, Jeff shares a number of mechanisms that make it easy for Grails developers to define configuration values, and to gain access to those configuration values at runtime.  
+While Grails applications often involve considerably less configuration than similar applications built with other frameworks, some configuration may still be necessary. In this short video, Jeff shares a number of mechanisms that make it easy for Grails developers to define configuration values, and to gain access to those configuration values at runtime.
 ''',
                 authors: ['Jeff Scott Brown']).save()
 
@@ -82,9 +82,9 @@ While Grails applications often involve considerably less configuration than sim
                 durationSeconds: 42,
                 releaseYear: 2016,
                 description: '''
-In the sixth Grails QuickCast, Grails co-founder, Jeff Scott Brown, introduces several tips and tricks related to building Grails 3 applications in IDEA. The Grails Quickcast series is brought to you from OCI and DZone.  
+In the sixth Grails QuickCast, Grails co-founder, Jeff Scott Brown, introduces several tips and tricks related to building Grails 3 applications in IDEA. The Grails Quickcast series is brought to you from OCI and DZone.
 
-Grails 3 is a high productivity framework for building web applications for the JVM. IntelliJ IDEA is a high productivity Integrated Development Environment (IDE) for building a variety of types of applications. IDEA has always had really great support for building Grails applications and, in particular, has the very best support of any IDE for doing development with Grails 3.  
+Grails 3 is a high productivity framework for building web applications for the JVM. IntelliJ IDEA is a high productivity Integrated Development Environment (IDE) for building a variety of types of applications. IDEA has always had really great support for building Grails applications and, in particular, has the very best support of any IDE for doing development with Grails 3.
 ''',
                 authors: ['Jeff Scott Brown']).save()
 
