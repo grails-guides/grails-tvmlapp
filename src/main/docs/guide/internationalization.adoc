@@ -16,7 +16,7 @@ We use this code:
 include::{sourceDir}/grails-app/views/quickcast/show.gml[indent=0,lines=13..15]
 ----
 
-The  message codes and default values are defined in _messages.properties_
+Define message codes and default values in _messages.properties_
 
 [source]
 ./grails-app/i18n/messages.properties

@@ -15,6 +15,14 @@ _Quickcast_ domain class is our data model. We define different properties to st
 include::{sourceDir}/grails-app/domain/com/ociweb/quickcasts/Quickcast.groovy[indent=0]
 ----
 
+With a http://docs.grails.org/latest/guide/testing.html[Unit Test], we test the property body is option
+
+[source,groovy]
+./src/test/groovy/com/ociweb/quickcasts/QuickcastSpec.groovy
+----
+include::{sourceDir}/src/test/groovy/com/ociweb/quickcasts/QuickcastSpec.groovy[indent=0]
+----
+
 We load some test data in _BootStrap.groovy_
 
 [source,javascript]

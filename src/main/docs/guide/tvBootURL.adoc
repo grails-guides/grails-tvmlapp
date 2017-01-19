@@ -11,7 +11,7 @@ Create a javascript file which will be the entry to our TVML Grails App:
 include::{sourceDir}/grails-app/assets/javascripts/application.js[indent=0]
 ----
 
-Please note, how the line displayed in the next Listing includes the TVMLKit JS file shown in previous section.
+Please note, how the line displayed in the next Listing includes the TVMLKit JS file discussed in the previous section.
 
 [source,javascript]
 ./grails-app/assets/javascripts/application.js

@@ -67,7 +67,7 @@ function addJsClass(el) {
 <h1 id="gettingStarted">1 Getting Started</h1>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/gettingStarted.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/gettingStarted.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -84,23 +84,57 @@ function addJsClass(el) {
 </blockquote>
 </div>
 <div class="paragraph">
-<p>The TVML App displays an <a href="https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/StackTemplate.html#//apple_ref/doc/uid/TP40015064-CH21-SW4">Apple TVML Stack Template</a> of Grails Quickcasts.
+<p>The TVML App, built during this guide, displays an <a href="https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/StackTemplate.html#//apple_ref/doc/uid/TP40015064-CH21-SW4">Apple TVML Stack Template</a> of Grails Quickcasts.
 Grails Quickcasts are short videos of pure Grails coding. When the user selects one, an <a href="https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/ProductTemplate.html#//apple_ref/doc/uid/TP40015064-CH8-SW4">Apple TVML Product Template</a> shows the Quickcast detail. The user can reproduce the video
 by selecting the play button.</p>
 </div>
 
 
-<h2 id="requirements">1.1 What you will need</h2>
+<h2 id="architecture">1.1 Architecture</h2>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/requirements.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/architecture.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
 
 
 <div class="paragraph">
-<p>To complete this guide you will need the following:</p>
+<p>This guide features a Client Server architecture. The Client, a tvOS application, connects to
+a Grails App, the servers, which responds with TVMLKit Js and TVML documents.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../img/architecture.png" alt="architecture">
+</div>
+</div>
+<div class="paragraph">
+<p>We have separated the Grails App from the Data ( mp4 files and Png files ); videos and thumbnails.
+We use <a href="https://www.mamp.info">MAMP</a> to run a local apache server at port 8888 pointing to the folder data.
+During this guide you will see references to mp4 files such as:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="key">releaseYear</span>: <span class="integer">2016</span>,</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In a Production environment, you may want to host
+those files in a service such as <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html">Amazon Simple Store Service - AWS S3</a></p>
+</div>
+
+
+<h2 id="requirements">1.2 What you will need</h2>
+
+<div class='contribute-btn'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/requirements.adoc"'>
+        <i class='fa fa-pencil-square-o'></i> Improve this doc
+    </button>
+</div>
+
+
+<div class="paragraph">
+<p>To complete this guide, you will need the following:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -120,10 +154,10 @@ by selecting the play button.</p>
 </div>
 
 
-<h2 id="howto">1.2 How to complete the guide</h2>
+<h2 id="howto">1.3 How to complete the guide</h2>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/howto.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/howto.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -138,10 +172,11 @@ by selecting the play button.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://github.com/grails-tvmlapp/archive/master.zip">Download</a> and unzip the source or if you already have <a href="https://git-scm.com/">Git</a>: <code>git clone <a href="https://github.com/grails-tvmlapp.git" class="bare">https://github.com/grails-tvmlapp.git</a></code></p>
+<p><a href="https://github.com/grails-guides/grails-tvmlapp/archive/master.zip">Download</a> and unzip
+the source or if you already have <a href="https://git-scm.com/">Git</a>: <code>git clone <a href="https://github.com/grails-guides/grails-tvmlapp.git" class="bare">https://github.com/grails-guides/grails-tvmlapp.git</a></code></p>
 </li>
 <li>
-<p><code>cd</code> into <code>grails-tvmlapp/initial</code></p>
+<p><code>cd</code> into <code>grails-guides/grails-tvmlapp/initial</code></p>
 </li>
 <li>
 <p>Head on over to the next section</p>
@@ -155,7 +190,7 @@ by selecting the play button.</p>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-You can go right to the completed example if you <code>cd</code> into <code>grails-tvmlapp/complete</code>
+You can go right to the completed example if you <code>cd</code> into <code>grails-guides/grails-tvmlapp/complete</code>
 </td>
 </tr>
 </table>
@@ -165,7 +200,7 @@ You can go right to the completed example if you <code>cd</code> into <code>grai
 <h1 id="writingTheTvOSApp">2 Writing the TVML Client</h1>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/writingTheTvOSApp.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/writingTheTvOSApp.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -217,15 +252,14 @@ static let tvBootURL = &quot;\(AppDelegate.tvBaseURL)/assets/application.js&quot
 <h1 id="writingTheApp">3 Writing the TVML Grails Application</h1>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/writingTheApp.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/writingTheApp.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
 
 
 <div class="paragraph">
-<p>The <em>initial</em> grails application which you can find in the <em>initial</em> folder was created
-with the command:</p>
+<p>The initial Grails application, which you can find in the <em>initial</em> folder, was created with the command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -259,7 +293,7 @@ with the command:</p>
 <h2 id="tvmlUtils">3.1 TVMLKit JS Utils</h2>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/tvmlUtils.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/tvmlUtils.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -276,11 +310,11 @@ with the command:</p>
 </blockquote>
 </div>
 <div class="paragraph">
-<p>Add a javascript file to our project. Defines a series of methods nearly identical as those described in the section Playing Media of
+<p>Add a javascript file to our project. It defines a series of methods nearly identical as those described in the section Playing Media of
 <a href="https://developer.apple.com/library/prerelease/content/documentation/TVMLKitJS/Conceptual/TVMLProgrammingGuide/PlayingVideo.html">TVML Programming Guide</a>.</p>
 </div>
 <div class="paragraph">
-<p>These methods allow to push pages into the natigation stack, fetch documents and play media.</p>
+<p>These methods allow to push pages into the navigation stack, fetch documents and play media.</p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/assets/javascripts/tvmlkit.js</div>
@@ -306,11 +340,9 @@ with the command:</p>
 <span class="keyword">function</span> <span class="function">pushPage</span>(document) {
     <span class="keyword">var</span> currentDoc = getActiveDocument();
     <span class="keyword">if</span> (currentDoc.getElementsByTagName(<span class="string"><span class="delimiter">&quot;</span><span class="content">loadingTemplate</span><span class="delimiter">&quot;</span></span>).item(<span class="integer">0</span>) == <span class="predefined-constant">null</span>) {
-        console.log(<span class="string"><span class="delimiter">&quot;</span><span class="content">no loading</span><span class="delimiter">&quot;</span></span>);
         navigationDocument.pushDocument(document);
     } <span class="keyword">else</span> {
         navigationDocument.replaceDocument(document, currentDoc);
-        console.log(<span class="string"><span class="delimiter">&quot;</span><span class="content">loading</span><span class="delimiter">&quot;</span></span>);
     }
 }
 
@@ -329,7 +361,7 @@ with the command:</p>
 <h2 id="tvBootURL">3.2 TV Boot Url</h2>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/tvBootURL.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/tvBootURL.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -371,7 +403,7 @@ App.<span class="function">onLaunch</span> = <span class="keyword">function</spa
 </div>
 </div>
 <div class="paragraph">
-<p>Please note, how the line displayed in the next Listing includes the TVMLKit JS file shown in previous section.</p>
+<p>Please note, how the line displayed in the next Listing includes the TVMLKit JS file discussed in the previous section.</p>
 </div>
 <div class="listingblock">
 <div class="title">/grails-app/assets/javascripts/application.js</div>
@@ -396,7 +428,7 @@ App.<span class="function">onLaunch</span> = <span class="keyword">function</spa
 <h2 id="domainClass">3.3 Domain class</h2>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/domainClass.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/domainClass.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -429,7 +461,6 @@ mapped onto an underlying database table. In Grails a domain is a class that liv
 <span class="reserved">class</span> Quickcast {
     String title
     String subtitle
-    List authors
     String description
     <span class="reserved">int</span> durationMinutes
     <span class="reserved">int</span> durationSeconds
@@ -444,6 +475,30 @@ mapped onto an underlying database table. In Grails a domain is a class that liv
 
     <span class="reserved">static</span> mapping = {
         description type: <span class="string"><span class="delimiter">'</span><span class="content">text</span><span class="delimiter">'</span></span>
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>With a <a href="http://docs.grails.org/latest/guide/testing.html">Unit Test</a>, we test the property body is option</p>
+</div>
+<div class="listingblock">
+<div class="title">/src/test/groovy/com/ociweb/quickcasts/QuickcastSpec.groovy</div>
+<div class="content">
+<pre class="CodeRay highlight"><code data-lang="groovy"><span class="keyword">package</span> com.ociweb.quickcasts
+
+<span class="keyword">import</span> <span class="include">grails.test.mixin.TestFor</span>
+<span class="keyword">import</span> <span class="include">spock.lang.Specification</span>
+
+<span class="comment">/**
+ * See the API for {@link grails.test.mixin.domain.DomainClassUnitTestMixin} for usage instructions
+ */</span>
+<span class="annotation">@TestFor</span>(Quickcast)
+<span class="type">class</span> <span class="class">QuickcastSpec</span> <span class="directive">extends</span> Specification {
+
+    <span class="type">void</span> <span class="string"><span class="delimiter">&quot;</span><span class="content">test description is optional</span><span class="delimiter">&quot;</span></span>() {
+        <span class="key">expect</span>:
+            <span class="keyword">new</span> Quickcast(<span class="key">description</span>: <span class="predefined-constant">null</span>).validate([<span class="string"><span class="delimiter">'</span><span class="content">description</span><span class="delimiter">'</span></span>])
     }
 }</code></pre>
 </div>
@@ -556,14 +611,14 @@ Grails 3 is a high productivity framework for building web applications for the 
 <h2 id="controllerIndex">3.4 Stack Template</h2>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/controllerIndex.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/controllerIndex.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
 
 
 <div class="paragraph">
-<p>We show first a <a href="https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/StackTemplate.html">Apple TVML Stack Template</a>
+<p>We show first an <a href="https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/StackTemplate.html">Apple TVML Stack Template</a>
 with the Grails Quickcasts:</p>
 </div>
 <div class="imageblock">
@@ -712,9 +767,7 @@ document {
 </span><span class="delimiter">'''</span></span>
         <span class="key">when</span>:
         RestBuilder rest = <span class="keyword">new</span> RestBuilder()
-        <span class="keyword">def</span> resp = rest.get(<span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:</span><span class="inline"><span class="inline-delimiter">${</span>serverPort<span class="inline-delimiter">}</span></span><span class="content">/quickcast</span><span class="delimiter">&quot;</span></span>) {
-            accept(<span class="string"><span class="delimiter">'</span><span class="content">application/xml</span><span class="delimiter">'</span></span>)
-        }
+        <span class="keyword">def</span> resp = rest.get(<span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:</span><span class="inline"><span class="inline-delimiter">${</span>serverPort<span class="inline-delimiter">}</span></span><span class="content">/quickcast</span><span class="delimiter">&quot;</span></span>)
 
         XMLUnit.setIgnoreWhitespace(<span class="predefined-constant">true</span>)
         XMLUnit.setNormalizeWhitespace(<span class="predefined-constant">true</span>)
@@ -727,7 +780,7 @@ document {
 </div>
 </div>
 <div class="paragraph">
-<p>To facilitate XML comparision in the above test, we include <em>XMLUnit</em> as a dependency.</p>
+<p>To facilitate XML comparison in the tests, we include <em>XMLUnit</em> as a dependency.</p>
 </div>
 <div class="listingblock">
 <div class="title">/build.gradle</div>
@@ -740,7 +793,7 @@ document {
 <h2 id="controllerShow">3.5 Product Template</h2>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/controllerShow.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/controllerShow.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -941,7 +994,7 @@ document {
         &lt;/banner&gt;
         &lt;shelf&gt;
             &lt;header&gt;
-                &lt;title&gt;Viewers Also Watched&lt;/title&gt;
+                &lt;title&gt;Viewers also Watched&lt;/title&gt;
             &lt;/header&gt;
             &lt;section&gt;
                 &lt;lockup onselect=&quot;getDocument('quickcast/1')&quot;&gt;
@@ -963,9 +1016,7 @@ document {
 </span><span class="delimiter">'''</span></span>
         <span class="key">when</span>:
         RestBuilder rest = <span class="keyword">new</span> RestBuilder()
-        <span class="keyword">def</span> resp = rest.get(<span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:</span><span class="inline"><span class="inline-delimiter">${</span>serverPort<span class="inline-delimiter">}</span></span><span class="content">/quickcast/1</span><span class="delimiter">&quot;</span></span>) {
-            accept(<span class="string"><span class="delimiter">'</span><span class="content">application/xml</span><span class="delimiter">'</span></span>)
-        }
+        <span class="keyword">def</span> resp = rest.get(<span class="string"><span class="delimiter">&quot;</span><span class="content">http://localhost:</span><span class="inline"><span class="inline-delimiter">${</span>serverPort<span class="inline-delimiter">}</span></span><span class="content">/quickcast/1</span><span class="delimiter">&quot;</span></span>)
 
         XMLUnit.setIgnoreWhitespace(<span class="predefined-constant">true</span>)
         XMLUnit.setNormalizeWhitespace(<span class="predefined-constant">true</span>)
@@ -982,7 +1033,7 @@ document {
 <h2 id="internationalization">3.6 Internationalization</h2>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/internationalization.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/internationalization.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -1048,7 +1099,7 @@ quickcasts.title=Grails Quickcasts</code></pre>
 <h1 id="runningTheApp">4 Running the Application</h1>
 
 <div class='contribute-btn'>
-    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-tvmlapp/edit/master/src/main/docs/guide/runningTheApp.adoc"'>
+    <button type='button' class='btn btn-default' onclick='window.location.href="https://github.com/grails-guides/grails-tvmlapp/edit/master/src/main/docs/guide/runningTheApp.adoc"'>
         <i class='fa fa-pencil-square-o'></i> Improve this doc
     </button>
 </div>
@@ -1065,22 +1116,22 @@ quickcasts.title=Grails Quickcasts</code></pre>
                 </td>
                 <td id="col2">
             <div class="local clearfix">
-                <div class="local-title" style="text-align: right"><a href="https://travis-ci.org/grails-tvmlapp"><img src="https://travis-ci.org/grails-tvmlapp.svg?branch=master" /></a></div>            
+                <div class="local-title" style="text-align: right"><a href="https://travis-ci.org/grails-guides/grails-tvmlapp"><img src="https://travis-ci.org/grails-guides/grails-tvmlapp.svg?branch=master" /></a></div>            
                         
                 <div class="local-title">
-                    <a href="https://github.com/grails-tvmlapp">
+                    <a href="https://github.com/grails-guides/grails-tvmlapp">
                     <svg height="35" class="octicon octicon-mark-github" viewBox="0 0 16 16" version="1.1" width="35" aria-hidden="true"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a> &nbsp;&nbsp;Get the Code
                 </div>
                 <div class="menu">
                     <div class="input-group">                        
-                        <button href="#" onclick="document.getElementById('github-url').value='git@github.com:grails-tvmlapp.git'" class="codeButton">SSH</button>
-                        <button onclick="document.getElementById('github-url').value='https://github.com/grails-tvmlapp.git'" class="codeButton">HTTPS</button>
-                        <button onclick="document.getElementById('github-url').value='https://github.com/grails-tvmlapp'" class="codeButton">Subversion</button>
+                        <button href="#" onclick="document.getElementById('github-url').value='git@github.com:grails-guides/grails-tvmlapp.git'" class="codeButton">SSH</button>
+                        <button onclick="document.getElementById('github-url').value='https://github.com/grails-guides/grails-tvmlapp.git'" class="codeButton">HTTPS</button>
+                        <button onclick="document.getElementById('github-url').value='https://github.com/grails-guides/grails-tvmlapp'" class="codeButton">Subversion</button>
                     </div>
        
                     <div class="input-group">                    
                         <!-- Target -->
-                        <input id="github-url" value="git@github.com:grails-tvmlapp.git" type="text" />
+                        <input id="github-url" value="git@github.com:grails-guides/grails-tvmlapp.git" type="text" />
 
                         <!-- Trigger -->
                         <button class="clipbtn" type="button" data-clipboard-target="#github-url">
@@ -1090,7 +1141,7 @@ quickcasts.title=Grails Quickcasts</code></pre>
 
                     </div>
                     <div class="input-group">
-                      <a href="https://github.com/grails-tvmlapp/archive/master.zip" class="downloadButton">Download ZIP</a>
+                      <a href="https://github.com/grails-guides/grails-tvmlapp/archive/master.zip" class="downloadButton">Download ZIP</a>
                     </div>
                 </div>
                 
@@ -1099,9 +1150,11 @@ quickcasts.title=Grails Quickcasts</code></pre>
                     
                     <div class="toc-item" style="margin-left:0px"><a href="#gettingStarted"><strong>1</strong><span>Getting Started</span></a></div>
                     
-                    <div class="toc-item" style="margin-left:10px"><a href="#requirements"><strong>1.1</strong><span>What you will need</span></a></div>
+                    <div class="toc-item" style="margin-left:10px"><a href="#architecture"><strong>1.1</strong><span>Architecture</span></a></div>
                     
-                    <div class="toc-item" style="margin-left:10px"><a href="#howto"><strong>1.2</strong><span>How to complete the guide</span></a></div>
+                    <div class="toc-item" style="margin-left:10px"><a href="#requirements"><strong>1.2</strong><span>What you will need</span></a></div>
+                    
+                    <div class="toc-item" style="margin-left:10px"><a href="#howto"><strong>1.3</strong><span>How to complete the guide</span></a></div>
                     
                     <div class="toc-item" style="margin-left:0px"><a href="#writingTheTvOSApp"><strong>2</strong><span>Writing the TVML Client</span></a></div>
                     
@@ -1130,7 +1183,7 @@ quickcasts.title=Grails Quickcasts</code></pre>
         </table>
 
         <div id="footer">
-            Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically. All guides are released with an ASLv2 license for the code, and Creative Commons license for the writing. 
+            Copies of this document may be made for your own use and for distribution to others, provided that you do not charge any fee for such copies and further provided that each copy contains this Copyright Notice, whether distributed in print or electronically. All guides are released with an ASLv2 license for the code, and Creative Commons license for the writing.
             
         </div>
 

@@ -1,4 +1,4 @@
-We show first a https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/StackTemplate.html[Apple TVML Stack Template]
+We show first an https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/StackTemplate.html[Apple TVML Stack Template]
 with the Grails Quickcasts:
 
 image::stackTemplate.png[]
@@ -41,7 +41,7 @@ Write a http://docs.grails.org/latest/guide/testing.html#functionalTesting[funct
 include::{sourceDir}/src/integration-test/groovy/com/ociweb/quickcasts/QuickcastControllerIndexSpec.groovy[indent=0]
 ----
 
-To facilitate XML comparision in the above test, we include _XMLUnit_ as a dependency.
+To facilitate XML comparison in the tests, we include _XMLUnit_ as a dependency.
 [source,groovy]
 ./build.gradle
 ----

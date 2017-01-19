@@ -1,6 +1,6 @@
 When we select the first Quickcast, the document residing in _http://localhost:8080/quickast/1_ is pushed into the navigation stack
 
-To render a Quickcast we use the
+To render a Quickcast, we use the
 https://developer.apple.com/library/prerelease/content/documentation/LanguagesUtilities/Conceptual/ATV_Template_Guide/ProductTemplate.html[Apple TVML Product Template].
 
 image::productTemplate.png[]
@@ -15,7 +15,7 @@ include::{sourceDir}/grails-app/controllers/com/ociweb/quickcasts/QuickcastContr
 
 The model passed to our view is the requested Quickcast and a series of related videos.
 
-We configure in _application.yml_ how many related quickcasts we want to show.
+In _application.yml_, we configure how many related Quickcasts we want to show.
 
 [source,yaml]
 ./grails-app/conf/application.yml
