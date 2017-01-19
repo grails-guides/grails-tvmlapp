@@ -1,6 +1,0 @@
-[[runningTheApp.adoc]]
-= Running the Application
-
-To run the Grails application use the _./gradlew bootRun_ command which will start the application on port 8080.
-
-Run the Xcode project and your Apple TvOS app will connect to your Grails Backend.
