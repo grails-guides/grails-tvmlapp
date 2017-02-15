@@ -15,3 +15,5 @@ writingTheApp:
   internationalization: Internationalization
 runningTheApp:
   title: Running the Application
+helpWithGrails:
+  title: Do you need help with Grails?  
