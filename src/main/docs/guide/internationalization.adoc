@@ -6,7 +6,7 @@ To render such a snippet:
 
 [source,groovy]
 ----
-include::{sourceDir}/src/integration-test/groovy/com/ociweb/quickcasts/QuickcastControllerShowSpec.groovy[indent=0,lines=25..27]
+include::{sourceDir}/src/integration-test/groovy/com/ociweb/quickcasts/QuickcastControllerShowSpec.groovy[indent=0,lines=23..24]
 ----
 
 We use this code:
