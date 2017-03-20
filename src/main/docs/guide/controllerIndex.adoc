@@ -45,5 +45,5 @@ To facilitate XML comparison in the tests, we include `XMLUnit` as a dependency.
 [source,groovy]
 ./build.gradle
 ----
-include::{sourceDir}/build.gradle[indent=0,lines=69]
+include::{sourceDir}/build.gradle[indent=0,lines=62]
 ----
