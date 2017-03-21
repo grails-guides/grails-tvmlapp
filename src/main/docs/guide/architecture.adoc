@@ -9,7 +9,7 @@ During this guide you will see references to mp4 files such as:
 [source,groovy]
 
 ----
-include::{sourceDir}/grails-app/init/com/ociweb/quickcasts/Bootstrap.groovy[indent=0,lines="12"]
+include::{sourceDir}/grails-app/init/com/ociweb/quickcasts/BootStrap.groovy[tags=dataServerLink]
 ----
 
 In a Production environment, you may want to host

@@ -9,7 +9,9 @@ class BootStrap {
                 durationMinutes: 17,
                 durationSeconds: 01,
                 releaseYear: 2016,
+                // tag::dataServerLink[]
                 heroImg: 'http://localhost:8888/quickcast_interceptor.png',
+                // end::dataServerLink[]
                 videoUrl: 'http://localhost:8888/grails_quickcast_1_interceptors.mp4',
                 authors: ['Jeff Scott Brown'],
                 description: 'This Quickcast assumes only basic familiarity with Groovy (which is pretty darn expressive anyway) and the MVC concept (which you already know). Also serves as an excellent introduction to the interceptor pattern in any language, because Grails\' behind-the-scenes legwork lets you focus on the logic of the pattern.'
