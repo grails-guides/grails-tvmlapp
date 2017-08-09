@@ -1,8 +1,8 @@
 package com.ociweb.quickcasts
 
 import grails.plugins.rest.client.RestBuilder
-import grails.test.mixin.integration.Integration
-import grails.transaction.Rollback
+import grails.testing.mixin.integration.Integration
+import grails.gorm.transactions.*
 import groovy.xml.XmlUtil
 import org.custommonkey.xmlunit.XMLUnit
 import spock.lang.Specification
