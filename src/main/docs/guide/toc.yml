@@ -1,4 +1,7 @@
+training:
+  title: Grails Training
 gettingStarted:
+  title: Getting Started
   title: Getting Started
   architecture: Architecture
   requirements: What you will need
