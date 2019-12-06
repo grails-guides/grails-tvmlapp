@@ -23,6 +23,14 @@ With a http://docs.grails.org/latest/guide/testing.html[Unit Test], we test the 
 include::{sourceDir}/src/test/groovy/com/ociweb/quickcasts/QuickcastSpec.groovy[indent=0]
 ----
 
+Create a GORM Data Service:
+
+[source,javascript]
+./grails-app/services/com/ociweb/quickcasts/QuickcastService.groovy
+----
+include::{sourceDir}/grails-app/services/com/ociweb/quickcasts/QuickcastService.groovy[indent=0]
+----
+
 We then load some test data in `BootStrap.groovy`.
 
 [source,javascript]

@@ -10,7 +10,7 @@ A request to `http://localhost:8080/quickcast/1` executes the `show` action of `
 [source,groovy]
 ./grails-app/controllers/com/ociweb/quickcasts/QuickcastController.groovy
 ----
-include::{sourceDir}/grails-app/controllers/com/ociweb/quickcasts/QuickcastController.groovy[indent=0,lines="1..6,12..16"]
+include::{sourceDir}/grails-app/controllers/com/ociweb/quickcasts/QuickcastController.groovy[]
 ----
 
 The model passed to our view is the requested Quickcast and a series of related videos.
@@ -20,7 +20,7 @@ In `application.yml`, we configure how many related Quickcasts we want to show.
 [source,yaml]
 ./grails-app/conf/application.yml
 ----
-include::{sourceDir}/grails-app/conf/application.yml[indent=0,lines="1..5"]
+include::{sourceDir}/grails-app/conf/application.yml[indent=0,tag=relatedquickcast]
 ----
 
 Fetching of related quickcasts is encapsulated in a Service.

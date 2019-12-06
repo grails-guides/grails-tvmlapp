@@ -1,7 +1,9 @@
 ---
+#tag::relatedquickcast[]
 ociweb:
     quickcasts:
         numberOfRelatedQuickcasts: 3
+#end::relatedquickcast[]
 ---
 grails:
     profile: rest-api

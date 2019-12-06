@@ -2,9 +2,8 @@ package com.ociweb.quickcasts
 
 import grails.config.Config
 import grails.core.support.GrailsConfigurationAware
-import grails.gorm.transactions.Transactional
+import grails.gorm.transactions.ReadOnly
 
-@Transactional
 class RelatedQuickcastsService implements GrailsConfigurationAware {
 
     int numberOfRelatedQuickcasts
@@ -14,6 +13,7 @@ class RelatedQuickcastsService implements GrailsConfigurationAware {
         numberOfRelatedQuickcasts = co.getRequiredProperty('ociweb.quickcasts.numberOfRelatedQuickcasts', Integer)
     }
 
+    @ReadOnly
     List<Quickcast> findAllRelatedQuickcasts(Quickcast quickcast) {
         def criteria = Quickcast.createCriteria()
         criteria.list {
