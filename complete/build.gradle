@@ -65,7 +65,6 @@ dependencies {
     runtime "org.apache.tomcat:tomcat-jdbc"
     runtime "com.bertramlabs.plugins:asset-pipeline-grails:3.0.11"
     testCompile "org.grails:grails-gorm-testing-support"
-    testCompile "org.grails:grails-datastore-rest-client"
     testCompile "org.grails:grails-web-testing-support"
     testCompile "xmlunit:xmlunit:1.6"
 }
