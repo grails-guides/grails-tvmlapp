@@ -1,17 +1,25 @@
 package com.ociweb.quickcasts
 
-import grails.plugins.rest.client.RestBuilder
 import grails.testing.mixin.integration.Integration
 import grails.gorm.transactions.*
+import grails.testing.spock.OnceBefore
 import groovy.xml.XmlUtil
+import io.micronaut.http.client.HttpClient
 import org.custommonkey.xmlunit.XMLUnit
+import spock.lang.Shared
 import spock.lang.Specification
 import org.springframework.beans.factory.annotation.Value
 
 @Rollback
 @Integration
 class QuickcastControllerIndexSpec extends Specification {
+    @Shared HttpClient client
 
+    @OnceBefore
+    void init() {
+        String baseUrl = "http://localhost:$serverPort"
+        this.client  = HttpClient.create(baseUrl.toURL())
+    }
     def "test stack template is rendered correctly"() {
 
         given:
@@ -54,14 +62,12 @@ class QuickcastControllerIndexSpec extends Specification {
 </document>
 '''
         when:
-        RestBuilder rest = new RestBuilder()
-        def resp = rest.get("http://localhost:${serverPort}/quickcast")
+        String xml = client.toBlocking().retrieve('/quickcast')
 
         XMLUnit.setIgnoreWhitespace(true)
         XMLUnit.setNormalizeWhitespace(true)
 
         then:
-        resp.status == 200
-        XMLUnit.compareXML(XmlUtil.serialize(resp.xml), expected).identical()
+        XMLUnit.compareXML(XmlUtil.serialize(xml), expected).identical()
     }
 }

@@ -1,17 +1,23 @@
 package com.ociweb.quickcasts
 
+import groovy.transform.CompileStatic
+
+@CompileStatic
 class QuickcastController {
+    QuickcastService quickcastService
     static responseFormats = ['xml']
 
-    def relatedQuickcastsService
+    RelatedQuickcastsService relatedQuickcastsService
 
     def index() {
-        [quickcasts: Quickcast.findAll()]
+        [quickcasts: quickcastService.findAll()]
     }
 
-    def show() {
-        def quickcast = Quickcast.get(params.id)
-        def relatedQuickcasts = relatedQuickcastsService.findAllRelatedQuickcasts(quickcast)
-        [quickcast: quickcast, relatedQuickcasts: relatedQuickcasts]
+    def show(Long id) {
+        Quickcast quickcast = quickcastService.findById(id)
+        [
+                quickcast: quickcast,
+                relatedQuickcasts: relatedQuickcastsService.findAllRelatedQuickcasts(quickcast)
+        ]
     }
 }

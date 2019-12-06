@@ -2,7 +2,7 @@ package com.ociweb.quickcasts
 
 import grails.config.Config
 import grails.core.support.GrailsConfigurationAware
-import grails.transaction.Transactional
+import grails.gorm.transactions.Transactional
 
 @Transactional
 class RelatedQuickcastsService implements GrailsConfigurationAware {
