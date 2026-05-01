@@ -1,7 +1,11 @@
-To generate a local version of the guide
+# Build a TVML App with Grails
 
-1. Download the repository  
-2. Generate the Guide  
-    
-    
-    ./gradlew publishGuide
+This repository contains the worked sample app for the [Build a TVML App with Grails](https://grails.apache.org/guides/grails-tvmlapp/4/guide/index.html) guide on the Apache Grails site.
+
+## Run the example
+
+`./gradlew bootRun`
+
+## Maintained at apache/grails-static-website
+
+The guide narrative is maintained at https://github.com/apache/grails-static-website. Changes to the guide content go there; this repo holds the worked sample app only.
